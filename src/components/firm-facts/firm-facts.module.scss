@@ -1,15 +1,16 @@
 .firmFacts {
 	background-color: var(--primary-color);
 	position: relative;
-	border: 2px dashed var(--gray-color);
+	border: 1px dashed var(--gray-color);
 	width: 100%;
 	padding: 85px;
 
 	h1 {
 		font-size: 6rem;
+		line-height: 66px;
 		color: var(--light-color);
 		margin: 0;
-		margin-top: 30px;
+		margin-top: 42px;
 		margin-bottom: 22px;
 		font-weight: 400;
 	}
@@ -19,7 +20,7 @@
 		height: 1px;
 		background-color: var(--light-color);
 		opacity: 20%;
-		margin-bottom: 50px;
+		margin-bottom: 51px;
 	}
 
 	.btnClose {
