@@ -1,0 +1,23 @@
+.card {
+	background-color: white;
+	border: none;
+	text-align: center;
+	height: 322px;
+	
+	&.default {
+		background-color: white;
+
+		&:hover {
+			background-color: #07C06A;
+		}
+	}
+  
+	&.border {
+		border: 15px solid white;
+
+		&:hover {
+			border-color: #07C06A;
+		}
+	}
+  }
+  

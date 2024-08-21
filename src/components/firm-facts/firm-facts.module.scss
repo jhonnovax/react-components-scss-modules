@@ -1,0 +1,53 @@
+.firmFacts {
+	background-color: #2D3E4E;
+	position: relative;
+	border: 2px dashed gray;
+	width: 100%;
+	padding: 85px;
+
+	h1 {
+		font-size: 2.5rem;
+		color: white;
+		margin: 0;
+		margin-top: 30px;
+		margin-bottom: 22px;
+		font-weight: 400;
+	}
+
+	hr {
+		border: none;
+		height: 1px;
+		background-color: white;
+		opacity: 20%;
+		margin-bottom: 50px;
+	}
+
+	.btnClose {
+		background: none;
+		border: none;
+		padding: 4px;
+		margin: 0;
+		position: absolute;
+		top: 50px;
+		right: 63px;
+		cursor: pointer;
+		color: white;
+	}
+
+	.cardsContainer {
+		display: grid;
+		gap: 18px;
+	}
+
+	@media (width <= 768px) {
+		.cardsContainer{
+			grid-template-columns: 1fr;
+		}
+	}
+
+	@media (width > 768px) {
+		.cardsContainer {
+			grid-template-columns: repeat(auto-fill, minmax(364px, 1fr));
+		}
+	}
+}
