@@ -10,6 +10,8 @@
 	cursor: pointer;
 	transition: all 0.3s ease-in-out;
 	overflow: hidden;
+	min-height: 70px;
+	width: 100%;
 
 	svg {
 		flex-shrink: 0;
@@ -17,10 +19,12 @@
 		margin-right: 16px;
 	}
 
-	text {
+	.text {
+		margin: 0 auto;
 		font-size: 1.9rem;
 		line-height: 24px;
 		font-weight: 600;
+		text-align: left;
 	}
 
 	&.default {

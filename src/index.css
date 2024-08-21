@@ -9,12 +9,15 @@
 	--gray-color: #AAAAAA;
 }
 
+html {
+	font-size: 62.5%;
+}
+
 body {
 	background-color: black;
 	margin: 0;
 	padding: 0;
 	font-family: "Open Sans", Helvetica, Arial;
-	font-size: 62.5%;
 }
 
 code {

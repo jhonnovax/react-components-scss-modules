@@ -2,13 +2,14 @@ import React, { useState } from 'react';
 import styles from './firm-facts-card.module.scss';
 import FirmFactButton from '../firm-facts-button/firm-facts-button.js';
 
-const FirmFactsCard = ({ className, disabled, variantCard, variantButton, buttonText }) => {
+const FirmFactsCard = ({ alignTop, disabled, className, variantCard, variantButton, buttonText }) => {
 	const [isBtnHovered, setIsBtnHovered] = useState(false);
+	const alignTopClass = alignTop ? styles.alignTop : '';
 	const cardClass = variantCard === 'border' ? styles.border : styles.default;
 
 	return (
 		<div 
-			className={`${className} ${styles.card} ${cardClass}`}
+			className={`${className} ${alignTopClass} ${styles.card} ${cardClass}`}
 			onMouseEnter={() => setIsBtnHovered(true)}
 			onMouseLeave={() => setIsBtnHovered(false)}
 		>

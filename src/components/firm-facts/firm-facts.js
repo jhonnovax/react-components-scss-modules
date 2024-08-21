@@ -41,19 +41,22 @@ const FirmFacts = () => {
 				/>
 
 				<FirmFactCard 
+					alignTop={true}
 					variantCard="default"
 					variantButton="icon"
 					buttonText={'This is a two line button that terminates with'}
 				/>
 
 				<FirmFactCard 
-					variantCard="default"
-					variantButton="icon"
-					buttonText={'This is a two line button that terminates with'}
+					alignTop={true}
 					disabled={true}
+					variantCard="default"
+					variantButton="icon"
+					buttonText={'This is a two line button that terminates with'}
 				/>
 
 				<FirmFactCard 
+					alignTop={true}
 					variantCard="border"
 					variantButton="icon"
 					buttonText={'This is a two line button that terminates with'}
