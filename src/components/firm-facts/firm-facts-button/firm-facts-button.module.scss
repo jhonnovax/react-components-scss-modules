@@ -17,8 +17,15 @@
 		margin-right: 16px;
 	}
 
+	text {
+		font-size: 1.9rem;
+		line-height: 24px;
+		font-weight: 600;
+	}
+
 	&.default {
 		.text {
+			
 			white-space: nowrap;
 		}
 	}
