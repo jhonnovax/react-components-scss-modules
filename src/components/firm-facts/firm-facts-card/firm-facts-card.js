@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './firm-facts-card.module.scss';
+import FirmFactButton from '../firm-facts-button/firm-facts-button.js';
 
-const FirmFactsCard = ({ className, variant, children }) => {
-	const cardClass = variant === 'border' ? styles.border : styles.default;
+const FirmFactsCard = ({ className, disabled, variantCard, variantButton, buttonText }) => {
+	const [isBtnHovered, setIsBtnHovered] = useState(false);
+	const cardClass = variantCard === 'border' ? styles.border : styles.default;
 
 	return (
-		<div className={`${className} ${styles.card} ${cardClass}`}>
-			{children}
+		<div 
+			className={`${className} ${styles.card} ${cardClass}`}
+			onMouseEnter={() => setIsBtnHovered(true)}
+			onMouseLeave={() => setIsBtnHovered(false)}
+		>
+			<FirmFactButton disabled={disabled} hovered={isBtnHovered} variant={variantButton}>
+				{buttonText}
+			</FirmFactButton>
 		</div>
 	);
 };

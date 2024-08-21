@@ -47,7 +47,8 @@
 		cursor: not-allowed;
 	}
 
-	&:hover:not(:disabled) {
+	&:hover:not(:disabled),
+	&.hovered:not(:disabled) {
 		background-color: #07C06A;
 		border: 1px solid white;
 		color: white;

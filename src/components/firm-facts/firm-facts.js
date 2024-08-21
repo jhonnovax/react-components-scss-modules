@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './firm-facts.module.scss';
 import FirmFactCard from './firm-facts-card/firm-facts-card.js';
-import FirmFactButton from './firm-facts-button/firm-facts-button.js';
 
 const FirmFacts = () => {
 	return (
@@ -16,47 +15,50 @@ const FirmFacts = () => {
 			<hr />
 
 			<div className={styles.cardsContainer}>
-				<FirmFactCard className={styles.featured} variant="default">
-					<FirmFactButton variant="icon">
-						This is a two line button that terminates with
-					</FirmFactButton>
-				</FirmFactCard>
+				<FirmFactCard 
+					className={styles.featured} 
+					variantCard="default"
+					variantButton="default"
+					buttonText={'This is a two line button that terminates with'}
+				/>
 
-				<FirmFactCard variant="default">
-					<FirmFactButton variant="icon">
-						This is a two line button that terminates with
-					</FirmFactButton>
-				</FirmFactCard>
+				<FirmFactCard 
+					variantCard="default"
+					variantButton="icon"
+					buttonText={'This is a two line button that terminates with'}
+				/>
 
-				<FirmFactCard variant="default">
-					<FirmFactButton variant="default">
-						This is a one line button
-					</FirmFactButton>
-				</FirmFactCard>
+				<FirmFactCard 
+					variantCard="default"
+					variantButton="default"
+					buttonText={'This is a one line button'}
+				/>
 
-				<FirmFactCard variant="default">
-					<FirmFactButton variant="icon">
-						This is a two line button that terminates with
-					</FirmFactButton>
-				</FirmFactCard>
-				
-				<FirmFactCard variant="default">
-					<FirmFactButton variant="icon">
-						This is a two line button that terminates with
-					</FirmFactButton>
-				</FirmFactCard>
+				<FirmFactCard 
+					variantCard="default"
+					variantButton="icon"
+					buttonText={'This is a two line button that terminates with'}
+				/>
 
-				<FirmFactCard variant="default">
-					<FirmFactButton variant="icon" disabled={true}>
-						This is a two line button that terminates with
-					</FirmFactButton>
-				</FirmFactCard>
+				<FirmFactCard 
+					variantCard="default"
+					variantButton="icon"
+					buttonText={'This is a two line button that terminates with'}
+				/>
 
-				<FirmFactCard variant="border">
-					<FirmFactButton variant="icon">
-						This is a two line button that terminates with
-					</FirmFactButton>
-				</FirmFactCard>
+				<FirmFactCard 
+					variantCard="default"
+					variantButton="icon"
+					buttonText={'This is a two line button that terminates with'}
+					disabled={true}
+				/>
+
+				<FirmFactCard 
+					variantCard="border"
+					variantButton="icon"
+					buttonText={'This is a two line button that terminates with'}
+				/>
+
 			</div>
 		</section>
 	);
