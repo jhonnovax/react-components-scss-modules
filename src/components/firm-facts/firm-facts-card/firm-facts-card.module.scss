@@ -8,6 +8,7 @@
 	min-height: 322px;
 	cursor: pointer;
 	padding: 35px 10px;
+	transition: background-color 0.5s ease-in-out, border-color 0.5s ease-in-out, color 0.5s ease-in-out;
 	
 	&.default {
 		background-color: var(--light-color);
@@ -21,9 +22,13 @@
 	&.border {
 		align-items: start;
 		
-		&:hover {
+		&:hover:not(.disabled) {
 			border-color: var(--accent-color);
 		}
+	}
+
+	&.disabled {
+		cursor: default;
 	}
   }
   
