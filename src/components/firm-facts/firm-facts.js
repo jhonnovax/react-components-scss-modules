@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './firm-facts.module.scss';
 import FirmFactCard from './firm-facts-card/firm-facts-card.js';
+import FirmFactButton from './firm-facts-button/firm-facts-button.js';
 
 const FirmFacts = () => {
 	return (
@@ -15,13 +16,47 @@ const FirmFacts = () => {
 			<hr />
 
 			<div className={styles.cardsContainer}>
-				<FirmFactCard className={styles.featured} variant="default" />
-				<FirmFactCard className={styles.tile} variant="default" />
-				<FirmFactCard className={styles.tile} variant="default" />
-				<FirmFactCard className={styles.tile} variant="default" />
-				<FirmFactCard className={styles.tile} variant="default" />
-				<FirmFactCard className={styles.tile} variant="default" />
-				<FirmFactCard className={styles.tile} variant="border" />
+				<FirmFactCard className={styles.featured} variant="default">
+					<FirmFactButton variant="icon">
+						This is a two line button that terminates with
+					</FirmFactButton>
+				</FirmFactCard>
+
+				<FirmFactCard className={styles.tile} variant="default">
+					<FirmFactButton variant="icon">
+						This is a two line button that terminates with
+					</FirmFactButton>
+				</FirmFactCard>
+
+				<FirmFactCard className={styles.tile} variant="default">
+					<FirmFactButton variant="default">
+						This is a one line button
+					</FirmFactButton>
+				</FirmFactCard>
+
+				<FirmFactCard className={styles.tile} variant="default">
+					<FirmFactButton variant="icon">
+						This is a two line button that terminates with
+					</FirmFactButton>
+				</FirmFactCard>
+				
+				<FirmFactCard className={styles.tile} variant="default">
+					<FirmFactButton variant="icon">
+						This is a two line button that terminates with
+					</FirmFactButton>
+				</FirmFactCard>
+
+				<FirmFactCard className={styles.tile} variant="default">
+					<FirmFactButton variant="icon" disabled={true}>
+						This is a two line button that terminates with
+					</FirmFactButton>
+				</FirmFactCard>
+
+				<FirmFactCard className={styles.tile} variant="border">
+					<FirmFactButton variant="icon">
+						This is a two line button that terminates with
+					</FirmFactButton>
+				</FirmFactCard>
 			</div>
 		</section>
 	);

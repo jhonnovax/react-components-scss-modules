@@ -1,8 +1,13 @@
 .card {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	background-color: white;
 	border: none;
 	text-align: center;
 	height: 322px;
+	cursor: pointer;
+	padding: 16px;
 	
 	&.default {
 		background-color: white;

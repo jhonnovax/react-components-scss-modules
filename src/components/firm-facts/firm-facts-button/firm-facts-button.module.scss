@@ -1,0 +1,48 @@
+.firmFactsButton {
+	background-color: #2D3E4E;
+	border: 1px solid #2D3E4E;
+	color: white;
+	display: flex;
+	align-items: center;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 70px;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+	overflow: hidden;
+
+	svg {
+		flex-shrink: 0;
+		display: none;
+		margin-right: 16px;
+	}
+
+	&.default {
+		.text {
+			white-space: nowrap;
+		}
+	}
+
+	&.icon {
+		svg {
+			display: block;
+		}
+
+		.text {
+			max-width: 100%;
+			text-overflow: ellipsis;
+		}
+	}
+
+	&:disabled {
+		background-color: #AAAAAA;
+		color: white;
+		cursor: not-allowed;
+	}
+
+	&:hover:not(:disabled) {
+		background-color: #07C06A;
+		border: 1px solid white;
+		color: white;
+	}
+}
