@@ -20,6 +20,9 @@
 	}
 
 	.text {
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
 		margin: 0 auto;
 		font-size: 1.9rem;
 		line-height: 24px;
@@ -29,8 +32,8 @@
 
 	&.default {
 		.text {
-			
-			white-space: nowrap;
+			-webkit-line-clamp: 1;
+			text-overflow: clip;
 		}
 	}
 
@@ -40,7 +43,7 @@
 		}
 
 		.text {
-			max-width: 100%;
+			-webkit-line-clamp: 2;
 			text-overflow: ellipsis;
 		}
 	}
