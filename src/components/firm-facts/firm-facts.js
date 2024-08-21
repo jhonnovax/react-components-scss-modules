@@ -6,8 +6,8 @@ const FirmFacts = () => {
 	return (
 		<section className={styles.firmFacts}>
 			<button className={styles.btnClose}>
-				<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24">
-					<path fill="currentColor" d="m12 13.4l-4.9 4.9q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275t.7.275t.275.7t-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7t-.7.275t-.7-.275z"/>
+				<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path id="Close" fill-rule="evenodd" clip-rule="evenodd" d="M1.0808 0L0 1.08227L20.9192 22.0299L0.0597062 42.9177L1.14051 44L22 23.1122L42.8595 44L43.9403 42.9177L23.0808 22.0299L44 1.08227L42.9192 0L22 20.9476L1.0808 0Z" fill="white"/>
 				</svg>
 			</button>
 
