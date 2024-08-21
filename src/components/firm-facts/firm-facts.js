@@ -22,37 +22,37 @@ const FirmFacts = () => {
 					</FirmFactButton>
 				</FirmFactCard>
 
-				<FirmFactCard className={styles.tile} variant="default">
+				<FirmFactCard variant="default">
 					<FirmFactButton variant="icon">
 						This is a two line button that terminates with
 					</FirmFactButton>
 				</FirmFactCard>
 
-				<FirmFactCard className={styles.tile} variant="default">
+				<FirmFactCard variant="default">
 					<FirmFactButton variant="default">
 						This is a one line button
 					</FirmFactButton>
 				</FirmFactCard>
 
-				<FirmFactCard className={styles.tile} variant="default">
+				<FirmFactCard variant="default">
 					<FirmFactButton variant="icon">
 						This is a two line button that terminates with
 					</FirmFactButton>
 				</FirmFactCard>
 				
-				<FirmFactCard className={styles.tile} variant="default">
+				<FirmFactCard variant="default">
 					<FirmFactButton variant="icon">
 						This is a two line button that terminates with
 					</FirmFactButton>
 				</FirmFactCard>
 
-				<FirmFactCard className={styles.tile} variant="default">
+				<FirmFactCard variant="default">
 					<FirmFactButton variant="icon" disabled={true}>
 						This is a two line button that terminates with
 					</FirmFactButton>
 				</FirmFactCard>
 
-				<FirmFactCard className={styles.tile} variant="border">
+				<FirmFactCard variant="border">
 					<FirmFactButton variant="icon">
 						This is a two line button that terminates with
 					</FirmFactButton>
