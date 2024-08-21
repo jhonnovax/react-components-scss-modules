@@ -2,6 +2,13 @@
 	box-sizing: border-box;
 }
 
+:root{
+	--primary-color: #2D3E4E;
+	--accent-color: #07C06A;
+	--light-color: white;
+	--gray-color: #AAAAAA;
+}
+
 body {
 	background-color: black;
 	margin: 0;

@@ -2,7 +2,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: white;
+	background-color: var(--light-color);
 	border: none;
 	text-align: center;
 	min-height: 322px;
@@ -10,18 +10,18 @@
 	padding: 16px;
 	
 	&.default {
-		background-color: white;
+		background-color: var(--light-color);
 
 		&:hover {
-			background-color: #07C06A;
+			background-color: var(--accent-color);
 		}
 	}
   
 	&.border {
-		border: 15px solid white;
+		border: 15px solid var(--light-color);
 
 		&:hover {
-			border-color: #07C06A;
+			border-color: var(--accent-color);
 		}
 	}
   }
