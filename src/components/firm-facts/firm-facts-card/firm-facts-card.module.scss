@@ -3,7 +3,7 @@
 	align-items: center;
 	justify-content: center;
 	background-color: var(--light-color);
-	border: none;
+	border: 15px solid var(--light-color);
 	text-align: center;
 	min-height: 322px;
 	cursor: pointer;
@@ -17,13 +17,12 @@
 		background-color: var(--light-color);
 
 		&:hover {
+			border-color: var(--accent-color);
 			background-color: var(--accent-color);
 		}
 	}
   
 	&.border {
-		border: 15px solid var(--light-color);
-
 		&:hover {
 			border-color: var(--accent-color);
 		}
