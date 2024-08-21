@@ -18,7 +18,7 @@ const FirmFacts = () => {
 				<FirmFactCard 
 					className={styles.featured} 
 					variantCard="default"
-					variantButton="default"
+					variantButton="icon"
 					buttonText={'This is a two line button that terminates with'}
 				/>
 
