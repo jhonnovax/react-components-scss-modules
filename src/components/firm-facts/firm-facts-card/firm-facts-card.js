@@ -4,12 +4,11 @@ import FirmFactButton from '../firm-facts-button/firm-facts-button.js';
 
 const FirmFactsCard = ({ alignTop, disabled, className, variantCard, variantButton, buttonText }) => {
 	const [isBtnHovered, setIsBtnHovered] = useState(false);
-	const alignTopClass = alignTop ? styles.alignTop : '';
 	const cardClass = variantCard === 'border' ? styles.border : styles.default;
 
 	return (
 		<div 
-			className={`${className} ${alignTopClass} ${styles.card} ${cardClass}`}
+			className={`${className} ${styles.card} ${cardClass}`}
 			onMouseEnter={() => setIsBtnHovered(true)}
 			onMouseLeave={() => setIsBtnHovered(false)}
 		>

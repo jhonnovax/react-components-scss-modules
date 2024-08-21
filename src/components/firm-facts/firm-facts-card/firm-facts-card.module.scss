@@ -8,10 +8,6 @@
 	min-height: 322px;
 	cursor: pointer;
 	padding: 50px 25px;
-
-	&.alignTop {
-		align-items: start;
-	}
 	
 	&.default {
 		background-color: var(--light-color);
@@ -23,6 +19,8 @@
 	}
   
 	&.border {
+		align-items: start;
+		
 		&:hover {
 			border-color: var(--accent-color);
 		}

@@ -42,7 +42,7 @@ const FirmFacts = () => {
 
 				<FirmFactCard 
 					alignTop={true}
-					variantCard="default"
+					variantCard="border"
 					variantButton="icon"
 					buttonText={'This is a two line button that terminates with'}
 				/>
@@ -50,7 +50,7 @@ const FirmFacts = () => {
 				<FirmFactCard 
 					alignTop={true}
 					disabled={true}
-					variantCard="default"
+					variantCard="border"
 					variantButton="icon"
 					buttonText={'This is a two line button that terminates with'}
 				/>
